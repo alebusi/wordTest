@@ -19,8 +19,14 @@ function letterSet (spanName, colorValue, numberValue, fontValue) {
 	spanName.style.fontFamily = fontType[fontValue];
 }
 
+function resetSpan (spanName) {
+	spanName.innerHTML = ""
+}
 
 function randomMaker() {
+	resetSpan(firstSpan);
+	resetSpan(secondSpan);
+	resetSpan(thirdSpan);
 
 // Picks either 1 or 0 to get the first or second color from the array
 var eitherOneOrZero = randomIntFromInterval(0,1),
@@ -37,7 +43,7 @@ var colorPairing = randomIntFromInterval(0,colorCouples.length - 1),
 	letterSet(firstSpan, colorPairing, theOtherValue, fontNumber);
 	letterSet(secondSpan, colorPairing, theOtherValue, fontNumber);
 
-	eitherOneOrZero == 0 ? null : letterSet(thirdSpan, colorPairing, theOtherValue, fontNumber);
+	eitherOneOrZero == 0 ? letterSet(thirdSpan, colorPairing, theOtherValue, fontNumber) : null;
 
 	// letterSet(thirdSpan, colorPairing, theOtherValue, fontNumber);
 	
