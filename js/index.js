@@ -5,31 +5,42 @@ var fontType = ['Roboto', 'Roboto Slab',  'Roboto Mono', 'PT Sans Caption'];
 
 var containerSpan = document.getElementById("container"),
   firstSpan = document.getElementById("letterOne"),
-  secondSpan = document.getElementById("letterTwo");
+  secondSpan = document.getElementById("letterTwo"),
+  thirdSpan = document.getElementById("letterThree");
 
 
 function randomIntFromInterval(min,max) {
     return Math.floor(Math.random()*(max-min+1)+min);
 }
 
+function letterSet (spanName, colorValue, numberValue, fontValue) {
+	spanName.innerHTML = letters[(randomIntFromInterval(0,letters.length - 1))];
+	spanName.style.color = colorCouples[colorValue][numberValue];
+	spanName.style.fontFamily = fontType[fontValue];
+}
+
 
 function randomMaker() {
 
+// Picks either 1 or 0 to get the first or second color from the array
 var eitherOneOrZero = randomIntFromInterval(0,1),
 		theOtherValue = (eitherOneOrZero == 0 ? 1 : 0);
 
+// Picks a color pair from colorCouples array
 var colorPairing = randomIntFromInterval(0,colorCouples.length - 1),
+// Picks a font from fontType array
 		fontNumber = randomIntFromInterval(0,fontType.length - 1);
 
+// Picks a color for the background
 	containerSpan.style.backgroundColor = colorCouples[colorPairing][eitherOneOrZero];
 
-	firstSpan.innerHTML = letters[(randomIntFromInterval(0,letters.length - 1))];
-	firstSpan.style.color = colorCouples[colorPairing][theOtherValue];
-	firstSpan.style.fontFamily = fontType[fontNumber];
+	letterSet(firstSpan, colorPairing, theOtherValue, fontNumber);
+	letterSet(secondSpan, colorPairing, theOtherValue, fontNumber);
+	letterSet(thirdSpan, colorPairing, theOtherValue, fontNumber);
 
-	secondSpan.innerHTML = letters[(randomIntFromInterval(0,letters.length - 1))];
-	secondSpan.style.color = colorCouples[colorPairing][theOtherValue];
-	secondSpan.style.fontFamily = fontType[fontNumber];
+	// secondSpan.innerHTML = letters[(randomIntFromInterval(0,letters.length - 1))];
+	// secondSpan.style.color = colorCouples[colorPairing][theOtherValue];
+	// secondSpan.style.fontFamily = fontType[fontNumber];
 	
 }
 
