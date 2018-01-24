@@ -12,19 +12,31 @@ function randomIntFromInterval(min,max) {
     return Math.floor(Math.random()*(max-min+1)+min);
 }
 
-var eitherOneOrZero = randomIntFromInterval(0,1);
 
-var theOtherValue = (eitherOneOrZero == 0 ? 1 : 0);
+function randomMaker() {
+
+var eitherOneOrZero = randomIntFromInterval(0,1),
+		theOtherValue = (eitherOneOrZero == 0 ? 1 : 0);
 
 var colorPairing = randomIntFromInterval(0,colorCouples.length - 1),
 		fontNumber = randomIntFromInterval(0,fontType.length - 1);
 
-containerSpan.style.backgroundColor = colorCouples[colorPairing][eitherOneOrZero];
+	containerSpan.style.backgroundColor = colorCouples[colorPairing][eitherOneOrZero];
 
-firstSpan.innerHTML = letters[(randomIntFromInterval(0,letters.length - 1))];
-firstSpan.style.color = colorCouples[colorPairing][theOtherValue];
-firstSpan.style.fontFamily = fontType[fontNumber];
+	firstSpan.innerHTML = letters[(randomIntFromInterval(0,letters.length - 1))];
+	firstSpan.style.color = colorCouples[colorPairing][theOtherValue];
+	firstSpan.style.fontFamily = fontType[fontNumber];
 
-secondSpan.innerHTML = letters[(randomIntFromInterval(0,letters.length - 1))];
-secondSpan.style.color = colorCouples[colorPairing][theOtherValue];
-secondSpan.style.fontFamily = fontType[fontNumber];
+	secondSpan.innerHTML = letters[(randomIntFromInterval(0,letters.length - 1))];
+	secondSpan.style.color = colorCouples[colorPairing][theOtherValue];
+	secondSpan.style.fontFamily = fontType[fontNumber];
+	
+}
+
+randomMaker();
+
+document.body.onkeyup = function(e){
+    if(e.keyCode == 32){
+        randomMaker();
+    }
+}
