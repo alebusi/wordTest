@@ -36,11 +36,10 @@ var colorPairing = randomIntFromInterval(0,colorCouples.length - 1),
 
 	letterSet(firstSpan, colorPairing, theOtherValue, fontNumber);
 	letterSet(secondSpan, colorPairing, theOtherValue, fontNumber);
-	letterSet(thirdSpan, colorPairing, theOtherValue, fontNumber);
 
-	// secondSpan.innerHTML = letters[(randomIntFromInterval(0,letters.length - 1))];
-	// secondSpan.style.color = colorCouples[colorPairing][theOtherValue];
-	// secondSpan.style.fontFamily = fontType[fontNumber];
+	eitherOneOrZero == 0 ? null : letterSet(thirdSpan, colorPairing, theOtherValue, fontNumber);
+
+	// letterSet(thirdSpan, colorPairing, theOtherValue, fontNumber);
 	
 }
 
