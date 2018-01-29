@@ -1,7 +1,7 @@
 var letters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 
-var colorCouples = [["#EF4444", "#009F75"], ["#FAA31B", "#88C6ED"], ["#FFF000", "#394BA0"], ["#82C341", "#D54799"], ["#fff", "#000"]];
-var fontType = ['Roboto', 'Roboto Slab',  'Roboto Mono', 'PT Sans Caption'];
+var colorCouples = [["#fff", "#000"]];
+var fontType = ['Roboto', 'Roboto Mono', 'PT Sans Caption'];
 
 var containerSpan = document.getElementById("container"),
   firstSpan = document.getElementById("letterOne"),
