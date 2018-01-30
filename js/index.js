@@ -29,7 +29,7 @@ function randomMaker() {
 	resetSpan(thirdSpan);
 
 // Picks either 1 or 0 to get the first or second color from the array
-var eitherOneOrZero = 0;
+var eitherOneOrZero = 1;
     //randomIntFromInterval(0,1),
 	//	theOtherValue = (eitherOneOrZero == 0 ? 1 : 0);
 
