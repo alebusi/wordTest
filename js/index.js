@@ -30,6 +30,7 @@ function randomMaker() {
 
 // Picks either 1 or 0 to get the first or second color from the array
 var eitherOneOrZero = randomIntFromInterval(0,1),
+         numletters = randomIntFromInterval(0,1),
 		theOtherValue = (eitherOneOrZero == 0 ? 1 : 0);
 
 // Picks a color pair from colorCouples array
@@ -43,7 +44,7 @@ var colorPairing = randomIntFromInterval(0,colorCouples.length - 1),
 	letterSet(firstSpan, colorPairing, theOtherValue, fontNumber);
 	letterSet(secondSpan, colorPairing, theOtherValue, fontNumber);
 
-	eitherOneOrZero == 0 ? letterSet(thirdSpan, colorPairing, theOtherValue, fontNumber) : null;
+	numletters == 0 ? letterSet(thirdSpan, colorPairing, theOtherValue, fontNumber) : null;
 
 	// letterSet(thirdSpan, colorPairing, theOtherValue, fontNumber);
 	
