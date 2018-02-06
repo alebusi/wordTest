@@ -18,13 +18,13 @@ function randomIntFromInterval(min,max) {
 }
 
 function letterSetC (spanName, colorValue, numberValue, fontValue) {
-	spanName.innerHTML = lettersC[(randomIntFromInterval(0,letters.length - 1))];
+	spanName.innerHTML = lettersC[(randomIntFromInterval(0,lettersC.length - 1))];
 	spanName.style.color = colorCouples[colorValue][numberValue];
 	spanName.style.fontFamily = fontType[fontValue];
 }
 
 function letterSetV (spanName, colorValue, numberValue, fontValue) {
-	spanName.innerHTML = lettersV[(randomIntFromInterval(0,letters.length - 1))];
+	spanName.innerHTML = lettersV[(randomIntFromInterval(0,lettersV.length - 1))];
 	spanName.style.color = colorCouples[colorValue][numberValue];
 	spanName.style.fontFamily = fontType[fontValue];
 }
