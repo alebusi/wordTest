@@ -10,6 +10,7 @@ var containerSpan = document.getElementById("container"),
   firstSpan = document.getElementById("letterOne"),
   secondSpan = document.getElementById("letterTwo"),
   thirdSpan = document.getElementById("letterThree");
+  fourSpan = document.getElementById("letterFour");
 
 
 function randomIntFromInterval(min,max) {
