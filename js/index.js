@@ -37,7 +37,7 @@ function randomMaker() {
 	resetSpan(firstSpan);
 	resetSpan(secondSpan);
 	resetSpan(thirdSpan);
-	resetSpan(fourSpan);
+	// resetSpan(fourSpan);
 
 // Picks either 1 or 0 to get the first or second color from the array
 var eitherOneOrZero = 0, //randomIntFromInterval(0,1),
