@@ -67,3 +67,6 @@ document.body.onkeyup = function(e){
         randomMaker();
     }
 }
+function aggiorna() {
+    location.reload();
+};
