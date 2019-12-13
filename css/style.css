@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: black;
 }
 
 p {
@@ -18,5 +19,8 @@ p {
 }
 
 #letterOne, #letterTwo, #letterThree, #letterFour {
-	font-size: 250px;
+	font-size: 70px;
+	padding:  20px;
+	margin: 5px;
+	background-color: orange;
 }
