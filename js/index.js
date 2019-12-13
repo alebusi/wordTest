@@ -4,7 +4,7 @@ var lettersV = ["a","e","i","o","u"];
 var lettersVn = ["a","e","i","o"];
 		 
 var colorCouples = [["#fff", "#000"]];
-var fontType = ['Roboto', 'PT Sans Caption'];
+var fontType = ['Roboto Mono 500', 'PT Sans Caption'];
 
 var containerSpan = document.getElementById("container"),
   firstSpan = document.getElementById("letterOne"),
