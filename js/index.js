@@ -70,3 +70,10 @@ document.body.onkeyup = function(e){
 function aggiorna() {
     location.reload();
 };
+function allCaps() {
+    if (document.getElementById("centering").style.textTransform == "lowercase") {
+	 document.getElementById("centering").style.textTransform = "uppercase"; 
+    }
+    else {
+	 document.getElementById("centering").style.textTransform = "lowercase";
+    }
