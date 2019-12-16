@@ -21,6 +21,6 @@ p {
 #letterOne, #letterTwo, #letterThree, #letterFour {
 	font-size: 70px;
 	padding:  20px;
-	margin: 5px;
+	margin: 15px;
 	background-color: orange;
 }
