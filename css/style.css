@@ -19,7 +19,7 @@ p {
 }
 
 #letterOne, #letterTwo, #letterThree, #letterFour {
-	font-size: 70px;
+	font-size: 100px;
 	padding:  20px;
 	margin: 15px;
 	background-color: orange;
