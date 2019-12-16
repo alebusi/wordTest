@@ -22,5 +22,10 @@ p {
 	font-size: 100px;
 	padding:  20px;
 	margin: 15px;
+}
+#letterOne, #letterThree {
 	background-color: orange;
+}
+#letterTwo, #letterFour {
+	background-color: #00FFFF;
 }
