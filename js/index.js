@@ -77,3 +77,4 @@ function allCaps() {
     else {
 	 document.getElementById("centering").style.textTransform = "lowercase";
     }
+}
